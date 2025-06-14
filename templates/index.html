@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Vision Assistant</title>
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <h1>Smart Vision Assistant</h1>
+    <h2>Live Webcam Feed</h2>
+    <img src="{{ url_for('video_feed') }}" width="1500" height="1000" />
+  <div id="detection-output"></div>
+
+  <div id="chat">
+    <input type="text" id="question" placeholder="Ask a question..." />
+    <button onclick="ask()">Ask</button>
+    <div id="response"></div>
+  </div>
+</body>
+</html>
